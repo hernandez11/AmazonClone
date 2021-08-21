@@ -1,0 +1,64 @@
+.header{
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    /* \top:0 makes the header srtick to the top and not show 
+    anything above it */
+    top:0;
+    /* z-index below makes it say "i dont want anything to show 
+    above this and immediately gives it priority over anything 
+    behind this */
+    z-index: 100;
+}
+.header__logo{
+    object-fit: contain;
+    width: 100px;
+    margin-left: 20px;
+    margin-right : 20px;
+    margin-top: 18px;
+}
+.header__searchIcon{
+    padding: 5px;
+    height: 22px !important;
+background-color: #cd9042;
+}
+.header__search{
+    display: flex;
+    flex:1;
+}
+.header__searchInput{
+    height: 12px;
+    padding: 10px;
+    border: none;
+    width: 100%;
+}
+.header__OptionLineOne{
+    font-size: 10px;
+}
+.header__OptionLineTwo{
+    font-size: 13px;
+    font-weight: 800;
+}
+.headerNav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.headerLink{
+    color:white;
+    text-decoration: none;
+}
+.headerOption{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header__optionBasket{
+    display: flex;
+    align-items: center;
+}
+.header__BasketCount{
+    margin-left: 10px;
+    margin-right: 10px;
+}
